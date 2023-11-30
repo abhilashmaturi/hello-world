@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('prebuild ') {
+      steps {
+        build 'mvn build '
+      }
+    }
+
   }
 }
